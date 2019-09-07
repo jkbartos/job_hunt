@@ -6,13 +6,13 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
 
 
 % character encoding
@@ -20,7 +20,7 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=.8]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
@@ -32,7 +32,7 @@
 %\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
 %\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
 \email{jordankbartos@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{www.jordanbartos.com}                         % optional, remove / comment the line if not wanted
+\homepage{jordanbartos.com}                         % optional, remove / comment the line if not wanted
 \extrainfo{\href{http://www.linkedin.com/in/jordankbartos}{LinkedIn}}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
@@ -52,16 +52,25 @@
 \begin{document}
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{University of Michigan\\College of LSA}{Ann Arbor, MI}
+\recipient{University of Michigan}{College of LSA\\500 S State St. \#2005\\Ann Arbor, MI 48109}
 \date{September 7, 2019}
-\opening{Dear Madam or Sir,}
+\opening{To Whom It May Concern,}
 \closing{Sincerely,}
 %\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
 \makelettertitle
 
-Hello, I'm writing to you to express my interest in the Research Support Programmer position with the College of LSA at the Univeristy of Michigan in Ann Arbor, MI. My experience in programming, hardware, and research along with my strong desire to learn new technologies makes me an ideal candidate for this position.
+I'm writing to express my interest in the Research Support Programmer position with the College of LSA at the University of Michigan. My experience with programming, hardware, assisting academic research, and my strong desire to learn new technologies makes me an exceptional candidate for this position.
 
-In the Fall of 2017, when I was accepted into the Computer Science post-baccalaureate program that I am currently enrolled in, I had essentially no programming experience. Though I have worked full-time and have taken on additional responsibilities as well, I have maintained a very high level of performance in my education.
+At the time of my acceptance into the computer science post-baccalaureate program at Oregon State University, I had little programming experience. Despite holding a full-time job throughout this program, I have maintained a high level of performance in my education. I believe the principal reason for this is that I am passionate about learning new technologies. Between terms, I spend much of my free time taking supplementary courses to further my understanding of topics that interest me. One skill-set I taught myself is Arduino, soldering, and working with hardware. I built a simple Data Acquisition System that measures soil moisture readings from four soil moisture sensors, displays the measurements to an LCD screen, logs them to a microSD card, and sends the data over Serial connection to a computer. A link to this project's GitHub repository can be found on my resume.
+
+In addition to this, I have volunteered with the US Army Corps of Engineers, The Nature Conservancy, and the Geography Department at Texas A\&M University to assist in experimental setup and data acquisition. With several teams of scientists, I set up experimental equipment, collected samples, and took readings in the field. Additionally, I earned a degree in biology from Texas A\&M University during which I took organic chemistry, biochemistry, physics, anatomy and physiology, and animal science labs. I learned about a wide array of experimental equipment and techniques.
+
+A team consisting of two other students and myself competed in the BeaverHacks Winter 2018 Hackathon. In a weekend, we built a C\textsuperscript{++} console-based journaling application for mindfulness. We incorporated user accounts, encryption that makes the log files unreadable to humans, and a feature that displays random happy memories from your user log of entries. A link to the  GitHub repository for this project can be found on my resume. When the results were announced, we were astounded to find that we did not just win our category, one created for introductory students, but had won the overall first place prize instead. The experience of working with others to create something good and useful will always stay fresh in my mind. My hope is that this position will offer me more ways to achieve that feeling.
+
+As a teaching assistant for the introduction to computer science course at Oregon State, I spend much of my time reading, debugging, and critiquing code written by my students. This has sharpened my debugging skills over the past year. It has also cemented to me the importance of writing well-documented and well-styled code. Another responsibility I have in this role is showing students where and why their code did not perform as they expected, though they may not yet understand the technical details at hand. I have helped teach new students the introductory curriculum in C\textsuperscript{++} for 3 terms; however, beginning in Fall 2019, the course I TA will be taught in Python instead. I have assisted in proofing, testing, and debugging the new course materials.
+
+
+Based upon my experience, my desire to learn, and my attention to detail, I believe I am an ideal candidate for this position. Please contact me for any additional information that you would like. Thank you for your time and consideration. 
 
 
 
