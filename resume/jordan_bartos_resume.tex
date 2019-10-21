@@ -1,0 +1,168 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Large Jordan Bartos}} 
+  & Email : \href{mailto:jordankbartos@gmail.com}{jordankbartos@gmail.com}\\
+  & LinkedIn : \href{https://www.linkedin.com/in/jordankbartos/}{linkedin.com/in/jordankbartos}\\ 
+  & GitHub : \href{https://www.github.com/jordankbartos}{github.com/jordankbartos}\\
+  & Mobile : 713-412-5491 \\\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oregon State University}{Corvallis, OR}
+      {Bachelor of Science in Computer Science in progress;  GPA: 4.00}{January 2018 -- Present}
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Bachelor of Science in Biology;  GPA: 2.76}{August 2004 -- May 2009}\\
+  \resumeSubHeadingListEnd
+\hfill
+
+%-----------EXPERIENCE-----------------
+\section{Relevant Experience}
+	\resumeSubHeadingListStart
+		\resumeSubheading
+     		 {Oregon State University}{Corvallis, OR}
+     		 {Teaching Assistant - Intro to Computer Science}{January 2019 - Present}
+     		 \resumeItemListStart
+        	\resumeItem{Instructor}
+       	   {Assist beginning students in learning the fundamentals of C++ programming.}
+       	\resumeItem{Grader}
+       	   {Read and evaluate students' code to provide meaningful feedback.}\\
+     	 \resumeItemListEnd
+      \resumeSubHeadingListEnd
+\hfill
+
+%-----------ADDITIONAL SKILLS-----------------
+\section{Additional Skills, Achievements, and Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Relevant Coursework}
+      {Computer Architecture and Assembly Language, Usability Engineering, Discrete Math, Data Structures, Analysis of Algorithms, Web Development, Software Engineering I}
+    \resumeSubItem{Currently Enrolled}
+    	{Operating Systems, Software Engineering II}
+    \resumeSubItem{\href{https://github.com/jkbartos/rewind-revitalize}{Rewind Revitalize - BeaverHacks Winter 2018}}{Overall 1\textsuperscript{st} place winner - a C\textsuperscript{++} console journaling program for mindfulness designed by a team of three intro students at Oregon State University.}
+    \resumeSubItem{\href{https://github.com/jordankbartos/PokerCalc}{PokerCalc}}
+      {A command line C++ program that determines which payments are necessary to settle winnings after a friendly game of poker such that the fewest number of payments necessary are made.}
+
+    
+  \resumeSubHeadingListEnd
+\hfill
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Proficient languages}{ C\textsuperscript{++}, C}
+    \resumeSubItem{Other languages}{JavaScript, HTML, CSS, Python, MASM}
+    \resumeSubItem{Framework familiarities}{node, express, django, bootstrap}
+    \resumeSubItem{Git and Github}{basic proficiency in Git and Github}
+    \resumeSubItem{Linux}{familiar with linux command line environment}
+    \resumeSubItem{Vim}{comfortable coding in Vim/vi}
+  \resumeSubHeadingListEnd
+ \hfill
+
+%-----------ADDITIONAL EXPERIENCE-----------------
+\section{Additional Experience}
+  \resumeSubHeadingListStart
+
+      
+
+ \resumeSubheading
+      {McCoy's Building Supply}{Bryan, TX}
+      {Class C Truck Driver}{May 2017 - Present}
+      \resumeItemListStart
+      		\resumeItem{Forklift Operator}
+      		{Safely operated forklifts to load and unload freight trucks.}
+      		\resumeItem{Truck Driver}
+      		{Delivered lumber and other building materials safely and efficiently.}
+      \resumeItemListEnd
+      
+      
+    \resumeSubheading
+      {Veritas Wine and Bistro}{College Station, TX}
+      {Chef de Tournant}{September 2014 - June 2015}
+      \resumeItemListStart
+        \resumeItem{Chef de Tournant}
+          {Saute, fry, grill, mise stations}\\
+      \resumeItemListEnd
+ 
+      
+      
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}

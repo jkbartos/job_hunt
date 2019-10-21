@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = red,
+    anchorcolor = red,
+    urlcolor = Blue
+}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Huge Jordan Bartos}} 
+  & Email : \href{mailto:jordankbartos@gmail.com}{jordankbartos@gmail.com}\\
+  & LinkedIn : \href{https://www.linkedin.com/in/jordankbartos/}{linkedin.com/in/jordankbartos}\\ 
+  & GitHub : \href{https://www.github.com/jordankbartos}{github.com/jordankbartos}\\
+  & Website : \href{http://www.jordanbartos.com}{jordanbartos.com}\\
+  & Mobile : 713-412-5491 \\\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oregon State University}{Corvallis, OR}
+      {B.S. in Computer Science;  GPA: 4.00}{January 2018 -- Present}
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {B.S. in Biology}{August 2004 -- May 2009}\\
+  \resumeSubHeadingListEnd
+\hfill
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+	\resumeSubHeadingListStart
+		\resumeSubheading
+		{Oregon State University}{Corvallis, OR}
+		{Teaching Assistant - Intro to Computer Science}{January 2019 - Present}
+     	\resumeItemListStart
+        	\resumeItem{Instructor}
+       	   		{Assist beginning students learning the fundamentals of C++ and Python programming}
+       		\resumeItem{Grader}
+       	   		{Read and evaluate students' programs to provide meaningful and helpful feedback}
+       		\resumeItem{Course Review}
+       			{Assisted in proofing course materials while transitioning the course curriculum from C\textsuperscript{++}-based to Python-based}
+     	 \resumeItemListEnd
+     	 
+     	 \resumeSubheading
+     	 {OSU Hackathon Club}{Corvallis, OR}
+     	 {Director of Marketing}{September 2019 - Present}
+     	 \resumeItemListStart
+     	 	\resumeItem{Event Organization}{Collaborate with a team of Hackathon Club officers to organize weekly Hacker Nights and quarterly Hackathon events}
+     	 	\resumeItem{Promotion}{Make and distribute promotional communiques for club events}
+     	 \resumeItemListEnd
+	\resumeSubHeadingListEnd
+\hfill
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Proficient languages}{ C\textsuperscript{++}, C, Python}
+    \resumeSubItem{Prior Experience With}{JavaScript, Node.js, Express.js, SQL, Django, HTML, CSS, Bootstrap, MASM}
+    \resumeSubItem{Version Control}{Git and GitHub}
+    \resumeSubItem{Linux}{Bash scrpting}
+  \resumeSubHeadingListEnd
+ \hfill
+
+%-----------ADDITIONAL SKILLS-----------------
+\section{Skills, Achievements, and Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Relevant Coursework}
+      {Data Structures, Analysis of Algorithms, Computer Architecture and Assembly Language, Usability Engineering, Discrete Math, Web Development, Software Engineering I}
+    \resumeSubItem{Currently Enrolled}
+    	{Operating Systems, Introduction to Databases}
+    \resumeSubItem{\href{https://github.com/jkbartos/rewind-revitalize}{Rewind Revitalize - BeaverHacks Winter 2018}}{Overall 1\textsuperscript{st} place winner - a C\textsuperscript{++} console journaling program for mindfulness designed by a team of three intro students at Oregon State University.}
+    \resumeSubItem{\href{https://github.com/jordankbartos/PokerCalc}{PokerCalc}}
+      {A command line C++ program that determines which payments are Pythonnecessary to settle winnings after a friendly game of poker such that the fewest number of payments necessary are made.}
+      \resumeSubItem{\href{http://www.jordanbartos.com}{Personal Website}}{My personal website. HTML, CSS, and bootstrap}
+     \resumeSubItem{\href{https://www.github.com/jordankbartos/soil-moisture-sensor}{Arduino Soil Moisture Sensor}}{An arduino-based DAS that monitors four capacitive soil moisture sensors, displays readings to an LCD, and records the readings to a micro-SD card}
+     \resumeSubItem{\href{}{Arduino Closet Light Automator}}{An arduino-based device that uses an ultrasonic detector to detect a person's presence and automatically turn on the closet light for a pre-determined amount of time.}
+     \resumeSubItem{Soldering and Simple Circuit-design and Circuit-building}{Designed, built, and soldered basic circuits and wiring schematics on PCB for arduino projects}
+
+    
+  \resumeSubHeadingListEnd
+\hfill
+
+
+
+%-----------ADDITIONAL EXPERIENCE-----------------
+\section{Additional and Volunteer Experience}
+  \resumeSubHeadingListStart
+
+ \resumeSubheading
+      {US Army Corps of Engineers}{Duck Field Research Facility, NC}
+      {Volunteer}{2013}
+      \resumeItemListStart
+      		\resumeItem{Sample Collection}
+      		{Took vibracore core samples of beach sediments for analysis}
+      		\resumeItem{Analysis}
+      		{Analyzed layers of core samples to determine water content and prepare for long-term storage}
+      \resumeItemListEnd
+      
+      
+    \resumeSubheading
+      {The Nature Conservancy at Nags Head Woods}{Kitty Hawk, NC}
+      {Volunteer}{2013}
+      \resumeItemListStart
+        \resumeItem{Data Collection}
+          {Checked water quality meters at Alligator River National Wildlife Refuge for salinity, redox potential, and pH}\\
+      \resumeItemListEnd
+      
+     \resumeSubheading
+      {Geography Department, Texas A\&M University}{College Station, TX}
+      {Volunteer}{2012}
+     \resumeItemListStart
+     \resumeItem{Data Collection}
+     {Assisted in data collection using GPS RTK to map sand dune features and blow-outs at Padre Island National Seashore, TX}
+	 \resumeItem{Equipment Setup}
+	 {Assisted setting up imagery equipment for surface layer soil moisture experiments}
+	 \resumeItemListEnd
+ 
+      
+      
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
