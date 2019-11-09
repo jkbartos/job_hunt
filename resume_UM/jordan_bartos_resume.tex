@@ -6,6 +6,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{changepage}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -96,12 +97,21 @@
     \resumeSubheading
       {Oregon State University}{Corvallis, OR}
       {B.S. in Computer Science;  GPA: 4.00}{January 2018 -- Present}
+
     \resumeSubheading
       {Texas A\&M University}{College Station, TX}
       {B.S. in Biology}{August 2004 -- May 2009}\\
   \resumeSubHeadingListEnd
 \hfill
 
+
+%---------COURSEWORK------------------
+\section{Coursework}
+\resumeItemListStart
+	\resumeSubItem{Completed Coursework}{Intro to CS I \& II, Discrete Structures in CS, Data Structures, Analysis of Algorithms, Web Development, Computer Architecture \& Assembly Language, Software Engineering I, Introduction to Usability Engineering}
+	\resumeSubItem{In Progress}{Operating Systems, Introduction to Databases}
+\resumeItemListEnd
+\hfill
 %-----------EXPERIENCE-----------------
 \section{Experience}
 	\resumeSubHeadingListStart
@@ -148,6 +158,7 @@
     \resumeSubItem{\href{https://github.com/jordankbartos/PokerCalc}{PokerCalc}}
       {A command line C++ program that determines which payments are Pythonnecessary to settle winnings after a friendly game of poker such that the fewest number of payments necessary are made.}
       \resumeSubItem{\href{http://www.jordanbartos.com}{Personal Website}}{My personal website. HTML, CSS, and bootstrap}
+      %\pagebreak
      \resumeSubItem{\href{https://www.github.com/jordankbartos/soil-moisture-sensor}{Arduino Soil Moisture Sensor}}{An arduino-based DAS that monitors four capacitive soil moisture sensors, displays readings to an LCD, and records the readings to a micro-SD card}
      \resumeSubItem{\href{}{Arduino Closet Light Automator}}{An arduino-based device that uses an ultrasonic detector to detect a person's presence and automatically turn on the closet light for a pre-determined amount of time.}
      \resumeSubItem{Soldering and Simple Circuit-design and Circuit-building}{Designed, built, and soldered basic circuits and wiring schematics on PCB for arduino projects}
@@ -161,7 +172,8 @@
 %-----------ADDITIONAL EXPERIENCE-----------------
 \section{Additional and Volunteer Experience}
   \resumeSubHeadingListStart
-
+		\resumeSubheading {McCoy's Corporation}{Bryan, TX}
+			{Class C Truck Driver}{2017 - present}
  \resumeSubheading
       {US Army Corps of Engineers}{Duck Field Research Facility, NC}
       {Volunteer}{2013}
