@@ -6,6 +6,7 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{changepage}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -13,16 +14,22 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
+\usepackage[colorlinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\hypersetup{
+    colorlinks = true,
+    linkcolor = red,
+    anchorcolor = red,
+    urlcolor = Blue
+}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -75,7 +82,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{}{\Large Jordan Bartos}} 
+  \textbf{\href{}{\Huge Jordan Bartos}} 
   & Email : \href{mailto:jordankbartos@gmail.com}{jordankbartos@gmail.com}\\
   & LinkedIn : \href{https://www.linkedin.com/in/jordankbartos/}{linkedin.com/in/jordankbartos}\\ 
   & GitHub : \href{https://www.github.com/jordankbartos}{github.com/jordankbartos}\\
@@ -89,59 +96,68 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Oregon State University}{Corvallis, OR}
-      {Bachelor of Science in Computer Science in progress;  GPA: 4.00}{January 2018 -- Present}
+      {B.S. in Computer Science;  GPA: 4.00}{January 2018 -- Present}
+
     \resumeSubheading
       {Texas A\&M University}{College Station, TX}
-      {Bachelor of Science in Biology}{August 2004 -- May 2009}\\
+      {B.S. in Biology}{August 2004 -- May 2009}\\
   \resumeSubHeadingListEnd
 \hfill
 
+
+%---------COURSEWORK------------------
+\section{Coursework}
+\resumeItemListStart
+	\resumeSubItem{Completed Coursework}{Intro to CS I \& II, Discrete Structures in CS, Data Structures, Analysis of Algorithms, Web Development, Computer Architecture \& Assembly Language, Software Engineering I, Introduction to Usability Engineering}
+	\resumeSubItem{In Progress}{Operating Systems, Introduction to Databases}
+\resumeItemListEnd
+\hfill
 %-----------EXPERIENCE-----------------
 \section{Experience}
 	\resumeSubHeadingListStart
 		\resumeSubheading
-     		{Oregon State University}{Corvallis, OR}
-     		{Teaching Assistant - Intro to Computer Science}{January 2019 - Present}
-     		\resumeItemListStart
-				\resumeItem{Instructor}{Assist beginning students in learning the fundamentals of C++ and Python programming.}
-				\resumeItem{Grader}{Read and evaluate students' code to provide meaningful feedback.}
-				\resumeItem{Course Review}{Assisted in review of course materials for transitioning the course from a C++ to a Python-based curriculum}
-			\resumeItemListEnd
+		{Oregon State University}{Corvallis, OR}
+		{Teaching Assistant - Intro to Computer Science}{January 2019 - Present}
+     	\resumeItemListStart
+        	\resumeItem{Instructor}
+       	   		{Assist beginning students learning the fundamentals of C++ and Python programming}
+       		\resumeItem{Grader}
+       	   		{Read and evaluate students' programs to provide meaningful and helpful feedback}
+       		\resumeItem{Course Review}
+       			{Assisted in proofing course materials while transitioning the course curriculum from C\textsuperscript{++}-based to Python-based}
+     	 \resumeItemListEnd
      	 
      	 \resumeSubheading
-     	 	{OSU Hackathon Club}{Corvallis, OR}
-     	 	{Director of Marketing}{September 2019 - Present}
-     	 	\resumeItemListStart
-     	 		\resumeItem{Event Organization}{Collaborated with a team of Hackathon Club officers to organize weekly Hacker Nights and quarterly Hackathon events}
-     	 		\resumeItem{Promotion}{Made and distributed promotional communiques for club events}
-     	 	\resumeItemListEnd
-     	 	
-      \resumeSubHeadingListEnd
+     	 {OSU Hackathon Club}{Corvallis, OR}
+     	 {Director of Marketing}{September 2019 - Present}
+     	 \resumeItemListStart
+     	 	\resumeItem{Event Organization}{Collaborate with a team of Hackathon Club officers to organize weekly Hacker Nights and quarterly Hackathon events}
+     	 	\resumeItem{Promotion}{Make and distribute promotional communiques for club events}
+     	 \resumeItemListEnd
+	\resumeSubHeadingListEnd
 \hfill
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
   \resumeSubHeadingListStart
     \resumeSubItem{Proficient languages}{ C\textsuperscript{++}, C, Python}
-    \resumeSubItem{Also familiar with}{JavaScript, Node.js, Express.js, SQL, Django, HTML, CSS, Bootstrap, MASM}
+    \resumeSubItem{Prior Experience With}{JavaScript, Node.js, Express.js, SQL, Django, HTML, CSS, Bootstrap, MASM}
     \resumeSubItem{Version Control}{Git and GitHub}
-    \resumeSubItem{Linux/Unix/Bash}{Linux/Unix command line and Bash scripting}
+    \resumeSubItem{Linux}{Bash scrpting}
   \resumeSubHeadingListEnd
  \hfill
 
 %-----------ADDITIONAL SKILLS-----------------
-\section{Achievements and Projects}
+\section{Skills, Achievements, and Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Relevant Coursework}
-      {Computer Architecture and Assembly Language, Usability Engineering, Discrete Math, Data Structures, Analysis of Algorithms, Web Development, Software Engineering I}
-    \resumeSubItem{Currently Enrolled}
-    	{Operating Systems, Introduction to Databases}
     \resumeSubItem{\href{https://github.com/jkbartos/rewind-revitalize}{Rewind Revitalize - BeaverHacks Winter 2018}}{Overall 1\textsuperscript{st} place winner - a C\textsuperscript{++} console journaling program for mindfulness designed by a team of three intro students at Oregon State University.}
     \resumeSubItem{\href{https://github.com/jordankbartos/PokerCalc}{PokerCalc}}
       {A command line C++ program that determines which payments are Pythonnecessary to settle winnings after a friendly game of poker such that the fewest number of payments necessary are made.}
-     \resumeSubItem{\href{https://www.github.com/jordankbartos/soil-moisture-sensor}{Arduino Soil Moisture Sensor}}{An arduino-based soil moisture sensor that monitors four capacitive soil moisture sensors and records the values at pre-set time intervals to a file on a micro-SD card}
+      \resumeSubItem{\href{http://www.jordanbartos.com}{Personal Website}}{My personal website. HTML, CSS, and bootstrap}
+      %\pagebreak
+     \resumeSubItem{\href{https://www.github.com/jordankbartos/soil-moisture-sensor}{Arduino Soil Moisture Sensor}}{An arduino-based DAS that monitors four capacitive soil moisture sensors, displays readings to an LCD, and records the readings to a micro-SD card}
      \resumeSubItem{\href{}{Arduino Closet Light Automator}}{An arduino-based device that uses an ultrasonic detector to detect a person's presence and automatically turn on the closet light for a pre-determined amount of time.}
-     \resumeSubItem{Soldering and Simple Circuit-design and Circuit-building}{Designed, built, and soldered basic circuits and wiring schematics on PCB for my soil moisture sensor and closet light projects}
+     \resumeSubItem{Soldering and Simple Circuit-design and Circuit-building}{Designed, built, and soldered basic circuits and wiring schematics on PCB for arduino projects}
 
     
   \resumeSubHeadingListEnd
@@ -150,9 +166,10 @@
 
 
 %-----------ADDITIONAL EXPERIENCE-----------------
-\section{Additional Experience}
+\section{Additional and Volunteer Experience}
   \resumeSubHeadingListStart
-
+		\resumeSubheading {McCoy's Corporation}{Bryan, TX}
+			{Class C Truck Driver}{2017 - present}
  \resumeSubheading
       {US Army Corps of Engineers}{Duck Field Research Facility, NC}
       {Volunteer}{2013}

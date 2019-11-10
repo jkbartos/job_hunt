@@ -1,0 +1,79 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jordan}{Bartos}
+%\title{}                               % optional, remove / comment the line if not wanted
+\address{4332 Nagle St}{Bryan, TX 77801}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(713)~412~5491}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jordankbartos@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{jordanbartos.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{http://www.linkedin.com/in/jordankbartos}{LinkedIn}}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Silicon Labs}{Boston, MA}
+\date{November 8, 2019}
+\opening{Dear Hiring Manager,}
+\closing{Best regards,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am writing to express my interest in the Software Engineering Internship at Silicon Labs. My performance in school, experience teaching computer science, and my passion for solving problems and learning new technologies makes me an exceptional candidate for this position. Through my coursework and personal side projects, I have demonstrated aptitude in key skills sought by Silicon Labs including Linux, Bash scripting, SQL, computer architecture, algorithms, and data structures as well as the use of best practices in writing C, C++, and Python. 
+ 
+As a teaching assistant for introduction to computer science at Oregon State University, I read, debug, and critique code written by my students. I also communicate technical and stylistic criticisms effectively. In doing so, I have sharpened my code reading and debugging skills. I have helped teach new students the introductory curriculum in C\textsuperscript{++} for 3 quarters. However, as of the Fall 2019 quarter, the course curriculum is taught in Python. During the transition from C\textsuperscript{++} to Python, I assisted in proofing, testing, and debugging the new course materials.
+ 
+At BeaverHacks Winter 2018, an OSU student club hackathon event, a team consisting of two other students and I built a C\textsuperscript{++} console-based journaling application for mindfulness. We incorporated user accounts, simple data encryption, and a feature that displays a random happy memory to the user. We competed against 14 other projects mostly created by more experienced students, so we were astounded to find that we won first place overall. Though this is no longer my most technically complex project, I am very proud of it. It represents the first time I jumped into coding head-first and experienced the thrill of making something with a team. Later, I joined the OSU Hackathon Club as an officer to help offer the same experience to other students. A link to the GitHub repository for my team's project and my other projects can be found on my resume.
+ 
+At the time of my acceptance into my current degree program, I had little coding experience. Despite holding a physically-demanding full-time job and filling a teaching assistant role while taking classes, I have maintained a high level of performance in my education. I believe the principal reason for this is that I am extremely driven and passionate about learning new technologies. Out of necessity, I also developed excellent time-management and task prioritization skills.
+
+Thank you for considering me for the Software Engineering Internship. Please contact me for any additional information. I am eager to learn more about this position and to bring my enthusiasm, experience, and desire to learn to Silicon Labs. 
+
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
