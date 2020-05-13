@@ -92,7 +92,7 @@
 %  \ifluatex
 %    \xetexorluatextrue
 %  \else
-%    \xetexorluatexfalse
+%    \xetexorlubecause of atexfalse
 %  \fi
 %\fi
 % automatic loading of latin modern fonts

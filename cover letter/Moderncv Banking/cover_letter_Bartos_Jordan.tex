@@ -1,0 +1,79 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Jordan}{Bartos}
+%\title{}                               % optional, remove / comment the line if not wanted
+\address{4332 Nagle St}{Bryan, TX 77801}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(713)~412~5491}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jordankbartos@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{jordanbartos.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{http://www.linkedin.com/in/jordankbartos}{LinkedIn}}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Lockheed Martin}{Louisville, CO}
+\date{April 12, 2020}
+\opening{Greetings,}
+\closing{Sincerely,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+
+I am writing in pursuit of the Software Engineer position at Lockheed Martin. My excellent academic performance and my experience in Python, C, C\textsuperscript{++}, Unix/Linux, and Git make me a qualified applicant for this position. But, I think you will come to see me as an ideal candidate because of my desire for continuous improvement, passion for building quality products, and proclivity for reinvesting in my community through leadershp roles, collaboration, and devotion to the principle of inclusivity.
+
+As a teaching assistant for introduction to computer science, I read, debugged, and critiqued my students' assignments. To provide more complete feedback, I wrote random and unit testing scripts to catch nearly 100\% of the bugs in their submissions. I shared these scripts with my fellow TAs so they too could increase the quality and ease of their grading process. I served as an instructor for five terms. For three terms, I taught in C\textsuperscript{++}; for two terms, I taught in Python. When the course transitioned from C\textsuperscript{++} to Python, I proof-read and debugged the new course materials. 
+
+In January 2018, I competed on a team in BeaverHacks Winter 2018, an Oregon State University Hackathon Club competition. Our team won first place, and the experience had an enormously positive impact on me. So when the opportunity arose, I decided to get involved in the OSU Hackathon Club. I served as the Director of Communications for one term, and later became president. As president, I created weekly data structures and algorithms competitions with tiered difficulty levels. This provided a fun way for students to hone their fundamentals, and it increased awareness about the hackathon club. In fact, membership grew over 300\% during my term as president. I also implemented an initiative that provides an avenue for students to attain club funding for hosting their own hackathons.
+
+In my remaining time, I like working on projects and learning new technologies. I have built an arduino data aquisition system, a slackbot, several command line tools in C, Python, and C\textsuperscript{++}, and my personal website. Please see the Achievements and Projects section of my resume for more details on these projects. I also like to take extracurricular courses online. I have taken courses that cover HTML, CSS, Javascript, Bootstrap, Node.js, SQL, Python, and git. Currently, I am taking RealDigital's electrical and computer engineering courses in digital logic, microprocessors, and digital systems.
+
+Based upon my experience, my desire to learn, and my attention to detail, I believe I am an excellent candidate for this position. I would be very excited for the opportunity to bring my skills to Lockheed Martin. Please contact me for any additional information that you would like. Thank you for your time and consideration.
+
+
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.

@@ -16,6 +16,7 @@
 \usepackage[colorlinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
+\usepackage{fdsymbol}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -44,7 +45,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
+  \item \small{
     \textbf{#1}{: #2 \vspace{-2pt}}
   }
 }
@@ -57,13 +58,21 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingEdu}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3}: \small{#5} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[label=, leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=$\cdot$]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -74,10 +83,11 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{}{\Large Jordan Bartos}} 
+  \textbf{\href{}{\huge Jordan Bartos}} 
   & Email : \href{mailto:jordankbartos@gmail.com}{jordankbartos@gmail.com}\\
   & LinkedIn : \href{https://www.linkedin.com/in/jordankbartos/}{linkedin.com/in/jordankbartos}\\ 
   & GitHub : \href{https://www.github.com/jordankbartos}{github.com/jordankbartos}\\
+  & Website : \href{http://www.jordankbartos.com}{jordankbartos.com}\\
   & Mobile : 713-412-5491 \\\\
 \end{tabular*}
 
@@ -85,84 +95,73 @@
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \resumeSubheadingEdu
       {Oregon State University}{Corvallis, OR}
-      {Bachelor of Science in Computer Science in progress;  GPA: 4.00}{January 2018 -- Present}
-    \resumeSubheading
+      {Bachelor of Science in Computer Science}{January 2018 -- December 2020 (expected)}{4.0}
+    \resumeSubheadingEdu
       {Texas A\&M University}{College Station, TX}
-      {Bachelor of Science in Biology;  GPA: 2.76}{August 2004 -- May 2009}\\
-  \resumeSubHeadingListEnd
-\hfill
-
-%-----------EXPERIENCE-----------------
-\section{Relevant Experience}
-	\resumeSubHeadingListStart
-		\resumeSubheading
-     		 {Oregon State University}{Corvallis, OR}
-     		 {Teaching Assistant - Intro to Computer Science}{January 2019 - Present}
-     		 \resumeItemListStart
-        	\resumeItem{Instructor}
-       	   {Assist beginning students in learning the fundamentals of C++ programming.}
-       	\resumeItem{Grader}
-       	   {Read and evaluate students' code to provide meaningful feedback.}\\
-     	 \resumeItemListEnd
-      \resumeSubHeadingListEnd
-\hfill
-
-%-----------ADDITIONAL SKILLS-----------------
-\section{Additional Skills, Achievements, and Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Relevant Coursework}
-      {Computer Architecture and Assembly Language, Usability Engineering, Discrete Math, Data Structures, Analysis of Algorithms, Web Development, Software Engineering I}
-    \resumeSubItem{Currently Enrolled}
-    	{Operating Systems, Software Engineering II}
-    \resumeSubItem{\href{https://github.com/jkbartos/rewind-revitalize}{Rewind Revitalize - BeaverHacks Winter 2018}}{Overall 1\textsuperscript{st} place winner - a C\textsuperscript{++} console journaling program for mindfulness designed by a team of three intro students at Oregon State University.}
-    \resumeSubItem{\href{https://github.com/jordankbartos/PokerCalc}{PokerCalc}}
-      {A command line C++ program that determines which payments are necessary to settle winnings after a friendly game of poker such that the fewest number of payments necessary are made.}
-
-    
+      {Bachelor of Science in Biology}{August 2004 -- May 2009}{2.76}\\
   \resumeSubHeadingListEnd
 \hfill
 
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
+\section{Skills}
   \resumeSubHeadingListStart
-    \resumeSubItem{Proficient languages}{ C\textsuperscript{++}, C}
-    \resumeSubItem{Other languages}{JavaScript, HTML, CSS, Python, MASM}
-    \resumeSubItem{Framework familiarities}{node, express, django, bootstrap}
-    \resumeSubItem{Git and Github}{basic proficiency in Git and Github}
-    \resumeSubItem{Linux}{familiar with linux command line environment}
-    \resumeSubItem{Vim}{comfortable coding in Vim/vi}
+    \resumeSubItem{Preferred languages}{ C\textsuperscript{++}, C, Python}
+    \resumeSubItem{Other languages}{JavaScript, HTML, CSS, MASM, Bash}
+    \resumeSubItem{Frameworks}{Node, Express, Handlebars, Bootstrap, Flask, SQL}
+    \resumeSubItem{Tools}{Linux, Version control with git and GitHub, vi/vim, Apache, Amazon Web Services EC2 and RDS, MySQL/MariaDB}
   \resumeSubHeadingListEnd
  \hfill
 
-%-----------ADDITIONAL EXPERIENCE-----------------
-\section{Additional Experience}
+%-----------EXPERIENCE-----------------
+\section{Experience}
   \resumeSubHeadingListStart
-
-      
-
- \resumeSubheading
-      {McCoy's Building Supply}{Bryan, TX}
-      {Class C Truck Driver}{May 2017 - Present}
+	\resumeSubheading{Teaching Assistant - Intro to Computer Science}{Corvallis, OR}
+	                 {Oregon State University}{January 2019 - March 2020}
       \resumeItemListStart
-      		\resumeItem{Forklift Operator}
-      		{Safely operated forklifts to load and unload freight trucks.}
-      		\resumeItem{Truck Driver}
-      		{Delivered lumber and other building materials safely and efficiently.}
+        \resumeItem{Instructed Students}{Taught new computer science students the basics of planning, writing, and testing code}
+       	\resumeItem{Graded assignments}{Interpreted results from automated graders and debugged students' assignments; provided helpful feedback on function and style}
+       	\resumeItem{Made custom grading scripts}{Created unit tests and random tests to provide more complete feedback and catch nearly 100\% of errors in students' submissions}
       \resumeItemListEnd
-      
-      
-    \resumeSubheading
-      {Veritas Wine and Bistro}{College Station, TX}
-      {Chef de Tournant}{September 2014 - June 2015}
+    \resumeSubheading{Club President}{Corvallis, OR}
+                     {OSU Hackathon Club}{January 2020 - Present}
+       \resumeItemListStart
+         \resumeItem{Organized hackathons}{Led a team of seven officers that planned two hackathons which served over 150 participants}
+         \resumeItem{Boosted membership}{Grew club membership by over 300\% by inventing programs that encouraged participation and by prioritizing inclusivity in all club activities}
+         \resumeItem{Created novel programs}{Sharpened students' fundamental skills and maintained club membership through weekly data structures and algorithms competitions hosted on hackerrank; empowered students to host their own hackathons by providing a route to attain club sponsorship}
+       \resumeItemListEnd
+     \resumeSubheading{Director of Communications}{Corvallis, OR}
+                      {OSU Hackathon Club}{October 2019 - December 2019}
+        \resumeItemListStart
+          \resumeItem{Student body liason}{Designed communiques for the club membership and student body}
+          \resumeItem{Corporate sponsor liason}{Communicated with current and potential corporate sponsors to plan their involvement in club activities}
+        \resumeItemListEnd
+         \resumeSubheading{Truck Driver}{Bryan, TX}
+                          {McCoy's Building Supply}{May 2017 - Present}
       \resumeItemListStart
-        \resumeItem{Chef de Tournant}
-          {Saute, fry, grill, mise stations}\\
+      		\resumeItem{Truck driver and forklift operator}{Delivered building materials full time while earning a bachelors in CS, performing teaching assistant duties, and managing the OSU Hackathon Club}
       \resumeItemListEnd
- 
-      
-      
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
+\hfill
+
+%-----------ADDITIONAL SKILLS-----------------
+\section{Achievements and Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Relevant Coursework}
+      {Computer Architecture and Assembly Language, Usability Engineering, Discrete Math, Data Structures, Analysis of Algorithms, Web Development, Software Engineering, Databases, Operating Systems, Computer Networks}
+    \resumeSubItem{Currently Enrolled}
+    	{\textbf{\href{https://www.realdigital.org}{RealDigital}}'s electrical \& computer engineering courses: Digital Logic, Microprocessors, and Digital Systems}
+    \resumeSubItem{\href{https://github.com/jordankbartos/complimentor-bot-v2}{ComplimentorBot}}{A slackbot hosted on Amazon EC2 and RDS with Apache, MariaDB, Flask, TSL/SSL, and the slack API}
+    \resumeSubItem{\href{https://github.com/jordankbartos/PokerCalc}{PokerCalc}}
+      {A command line tool that determines what transfers are needed to settle winnings after a game of poker such that the fewest number of payments are made using a greedy graph algorithm.}
+    \resumeSubItem{\href{https://github.com/jkbartos/rewind-revitalize}{Rewind Revitalize - BeaverHacks Winter 2018}}{Overall 1\textsuperscript{st} place winner - a C\textsuperscript{++} console journaling command line program for mindfulness.}
+    \resumeSubItem{\href{https://github.com/jordankbartos/subshell}{Subshell}}{A unix shell written in C that uses multiprocessing, signal handling, and system calls; supports backgrounding processes}
+    \resumeSubItem{\href{https://github.com/jordankbartos/file-transfer-sc}{File Transfer server/client}}{A command line file transfer server (in C) and client (in Python) that form a pair of TCP/IP connections and enables a user to browse a remote file system and transfer any filetype. Utilizes multithreading, system calls, and socket programming.}
+  \resumeSubHeadingListEnd
+\hfill
+
+
+
 %-------------------------------------------
 \end{document}
